@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SauceDemo_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">SauceDemo Test Suite</span>
+              <span class="suite-name border-passed">SauceDemo Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SauceDemo_Test_Suite" class="hide-methods failed suite-SauceDemo_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-SauceDemo_Test_Suite -->
-                      <a href="#" panel-name="suite-SauceDemo_Test_Suite" class="show-methods failed suite-SauceDemo_Test_Suite"> (show)</a> <!-- show-methods failed suite-SauceDemo_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-SauceDemo_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.LoginTests" class="method navigator-link" hash-for-method="successfulLogin">successfulLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-SauceDemo_Test_Suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,7 +108,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.LoginTests" class="method navigator-link" hash-for-method="successfulLogin">successfulLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,7 +118,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyProductCount(standard_user, secret_sauce)">verifyProductCount(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,7 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyProductCount(performance_glitch_user, secret_sauce)">verifyProductCount(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyProductCount(standard_user, secret_sauce)">verifyProductCount(standard_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,6 +139,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyProductCount(standard_user, secret_sauce)">verifyProductCount(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SauceDemo_Test_Suite" title="com.owethupeyane.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyProductCount(performance_glitch_user, secret_sauce)">verifyProductCount(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,26 +163,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SauceDemo_Test_Suite" class="panel SauceDemo_Test_Suite">
-          <div class="suite-SauceDemo_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.owethupeyane.tests.LoginTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulLogin">
-                  </a> <!-- successfulLogin -->
-                  <span class="method-name">successfulLogin</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.owethupeyane.tests.LoginTests.successfulLogin(LoginTests.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SauceDemo_Test_Suite-class-failed -->
           <div class="suite-SauceDemo_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -203,6 +174,13 @@
                   <a name="lockedOutUser">
                   </a> <!-- lockedOutUser -->
                   <span class="method-name">lockedOutUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLogin">
+                  </a> <!-- successfulLogin -->
+                  <span class="method-name">successfulLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,14 +207,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyProductCount(standard_user, secret_sauce)">
-                  </a> <!-- verifyProductCount(standard_user, secret_sauce) -->
-                  <span class="method-name">verifyProductCount</span>
-                  <span class="parameters">(standard_user,secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyProductCount">
                   </a> <!-- verifyProductCount -->
                   <span class="method-name">verifyProductCount</span>
@@ -244,10 +214,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyProductCount(performance_glitch_user, secret_sauce)">
-                  </a> <!-- verifyProductCount(performance_glitch_user, secret_sauce) -->
+                  <a name="verifyProductCount(standard_user, secret_sauce)">
+                  </a> <!-- verifyProductCount(standard_user, secret_sauce) -->
                   <span class="method-name">verifyProductCount</span>
-                  <span class="parameters">(performance_glitch_user,secret_sauce)</span>
+                  <span class="parameters">(standard_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -264,6 +234,14 @@
                   </a> <!-- verifyProductCount(standard_user, secret_sauce) -->
                   <span class="method-name">verifyProductCount</span>
                   <span class="parameters">(standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductCount(performance_glitch_user, secret_sauce)">
+                  </a> <!-- verifyProductCount(performance_glitch_user, secret_sauce) -->
+                  <span class="method-name">verifyProductCount</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -343,48 +321,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyProductCount')
 data.setCell(0, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(0, 3, 5614);
+data.setCell(0, 3, 7289);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyProductCount')
 data.setCell(1, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(1, 3, 5401);
+data.setCell(1, 3, 5474);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyProductCount')
-data.setCell(2, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(2, 3, 1405);
+data.setCell(2, 1, 'lockedOutUser')
+data.setCell(2, 2, 'com.owethupeyane.tests.LoginTests')
+data.setCell(2, 3, 2611);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testAddToCart')
 data.setCell(3, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(3, 3, 628);
+data.setCell(3, 3, 1280);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'lockedOutUser')
-data.setCell(4, 2, 'com.owethupeyane.tests.LoginTests')
-data.setCell(4, 3, 480);
+data.setCell(4, 1, 'verifyProductCount')
+data.setCell(4, 2, 'com.owethupeyane.tests.InventoryTests')
+data.setCell(4, 3, 831);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'successfulLogin')
-data.setCell(5, 2, 'com.owethupeyane.tests.LoginTests')
-data.setCell(5, 3, 461);
+data.setCell(5, 1, 'testAddToCart')
+data.setCell(5, 2, 'com.owethupeyane.tests.InventoryTests')
+data.setCell(5, 3, 525);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyProductCount')
 data.setCell(6, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(6, 3, 460);
+data.setCell(6, 3, 477);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyProductCount')
 data.setCell(7, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(7, 3, 449);
+data.setCell(7, 3, 440);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyProductCount')
-data.setCell(8, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(8, 3, 415);
+data.setCell(8, 1, 'successfulLogin')
+data.setCell(8, 2, 'com.owethupeyane.tests.LoginTests')
+data.setCell(8, 3, 402);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testAddToCart')
+data.setCell(9, 1, 'verifyProductCount')
 data.setCell(9, 2, 'com.owethupeyane.tests.InventoryTests')
-data.setCell(9, 3, 351);
+data.setCell(9, 3, 299);
 window.suiteTableData['SauceDemo_Test_Suite']= { tableData: data, tableDiv: 'times-div-SauceDemo_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-SauceDemo_Test_Suite">
               </div> <!-- times-div-SauceDemo_Test_Suite -->
             </div> <!-- times-div -->
@@ -417,127 +395,125 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCart</span>
-                <span class="method-start">7190 ms</span>
+                <span class="method-start">5759 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testAddToCart status=SUCCESS method=InventoryTests.testAddToCart()[pri:0, instance:...)</span>
-                <span class="method-start">7841 ms</span>
+                <span class="method-start">7064 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8142 ms</span>
+                <span class="method-start">7327 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductCount</span>
-                <span class="method-start">10731 ms</span>
+                <span class="method-start">9392 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount()[pri:0,...)</span>
-                <span class="method-start">11195 ms</span>
+                <span class="method-start">9835 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11398 ms</span>
+                <span class="method-start">10039 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductCount(standard_user, secret_sauce)</span>
-                <span class="method-start">13591 ms</span>
+                <span class="method-start">27931 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lan...)</span>
-                <span class="method-start">14049 ms</span>
+                <span class="method-start">28768 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14257 ms</span>
+                <span class="method-start">29079 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductCount(performance_glitch_user, secret_sauce)</span>
-                <span class="method-start">49310 ms</span>
+                <span class="method-start">31650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lan...)</span>
-                <span class="method-start">54929 ms</span>
+                <span class="method-start">37126 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.owethupeyane.tests.LoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55266 ms</span>
+                <span class="method-start">37324 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">lockedOutUser</span>
-                <span class="method-start">70662 ms</span>
+                <span class="method-start">49355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=lockedOutUser status=SUCCESS method=LoginTests.lockedOutUser()[pri:0, instance:com....)</span>
-                <span class="method-start">71146 ms</span>
+                <span class="method-start">52177 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">71465 ms</span>
+                <span class="method-start">54061 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">successfulLogin</span>
-                <span class="method-start">73559 ms</span>
+                <span class="method-start">57170 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=successfulLogin status=FAILURE method=LoginTests.successfulLogin()[pri:0, instance:...)</span>
-                <span class="method-start">74033 ms</span>
+                <span class="method-name">tearDown([TestResult name=successfulLogin status=SUCCESS method=LoginTests.successfulLogin()[pri:0, instance:...)</span>
+                <span class="method-start">57576 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.owethupeyane.tests.InventoryTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">74520 ms</span>
+                <span class="method-start">58379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCart</span>
-                <span class="method-start">83717 ms</span>
+                <span class="method-start">60858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testAddToCart status=SUCCESS method=InventoryTests.testAddToCart()[pri:0, instance:...)</span>
-                <span class="method-start">84069 ms</span>
+                <span class="method-start">61384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">85040 ms</span>
+                <span class="method-start">61558 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductCount</span>
-                <span class="method-start">92466 ms</span>
+                <span class="method-start">64673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount()[pri:0,...)</span>
-                <span class="method-start">94215 ms</span>
+                <span class="method-start">65152 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">95146 ms</span>
+                <span class="method-start">65692 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductCount(standard_user, secret_sauce)</span>
-                <span class="method-start">108929 ms</span>
+                <span class="method-start">80215 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lan...)</span>
-                <span class="method-start">109351 ms</span>
+                <span class="method-start">80731 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">113036 ms</span>
+                <span class="method-start">82995 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductCount(performance_glitch_user, secret_sauce)</span>
-                <span class="method-start">116273 ms</span>
+                <span class="method-start">92164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lan...)</span>
-                <span class="method-start">121680 ms</span>
+                <span class="method-start">99455 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

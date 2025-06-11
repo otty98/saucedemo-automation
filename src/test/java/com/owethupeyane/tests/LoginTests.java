@@ -10,7 +10,7 @@ public class LoginTests extends TestBase {
     @Test
     public void successfulLogin() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("wrong_user", "wrong_password");
+        loginPage.login("standard_user", "secret_sauce");
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"));
     }
 
