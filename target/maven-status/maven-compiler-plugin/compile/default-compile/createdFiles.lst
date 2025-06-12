@@ -1,4 +1,2 @@
 com\owethupeyane\pages\InventoryPage.class
 com\owethupeyane\pages\LoginPage.class
-com\owethupeyane\utils\Config.class
-com\owethupeyane\utils\WebDriverFactory.class

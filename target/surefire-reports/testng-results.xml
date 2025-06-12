@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-11T14:19:16 SAST" name="SauceDemo Test Suite" finished-at="2025-06-11T14:20:57 SAST" duration-ms="100718">
+  <suite started-at="2025-06-12T13:16:27 SAST" name="SauceDemo Test Suite" finished-at="2025-06-12T13:18:52 SAST" duration-ms="144487">
     <groups>
     </groups>
-    <test started-at="2025-06-11T14:19:16 SAST" name="Login Tests" finished-at="2025-06-11T14:20:14 SAST" duration-ms="57954">
+    <test started-at="2025-06-12T13:16:27 SAST" name="Login Tests" finished-at="2025-06-12T13:17:52 SAST" duration-ms="84078">
       <class name="com.owethupeyane.tests.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c]" started-at="2025-06-11T14:19:54 SAST" name="setUp" finished-at="2025-06-11T14:20:06 SAST" duration-ms="11881" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d]" started-at="2025-06-12T13:17:46 SAST" name="setUp" finished-at="2025-06-12T13:17:47 SAST" duration-ms="1021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="lockedOutUser()[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c]" started-at="2025-06-11T14:20:06 SAST" name="lockedOutUser" finished-at="2025-06-11T14:20:08 SAST" duration-ms="2611" status="PASS">
+        <test-method signature="lockedOutUser()[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d]" started-at="2025-06-12T13:17:47 SAST" name="lockedOutUser" finished-at="2025-06-12T13:17:48 SAST" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedOutUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c]" started-at="2025-06-11T14:20:09 SAST" name="tearDown" finished-at="2025-06-11T14:20:10 SAST" duration-ms="1882" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d]" started-at="2025-06-12T13:17:48 SAST" name="tearDown" finished-at="2025-06-12T13:17:48 SAST" duration-ms="178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=lockedOutUser status=SUCCESS method=LoginTests.lockedOutUser()[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c] output={null}]]]>
+                <![CDATA[[TestResult name=lockedOutUser status=SUCCESS method=LoginTests.lockedOutUser()[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c]" started-at="2025-06-11T14:20:10 SAST" name="setUp" finished-at="2025-06-11T14:20:14 SAST" duration-ms="3108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d]" started-at="2025-06-12T13:17:48 SAST" name="setUp" finished-at="2025-06-12T13:17:51 SAST" duration-ms="2696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="successfulLogin()[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c]" started-at="2025-06-11T14:20:14 SAST" name="successfulLogin" finished-at="2025-06-11T14:20:14 SAST" duration-ms="402" status="PASS">
+        <test-method signature="successfulLogin()[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d]" started-at="2025-06-12T13:17:51 SAST" name="successfulLogin" finished-at="2025-06-12T13:17:51 SAST" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c]" started-at="2025-06-11T14:20:14 SAST" name="tearDown" finished-at="2025-06-11T14:20:14 SAST" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d]" started-at="2025-06-12T13:17:51 SAST" name="tearDown" finished-at="2025-06-12T13:17:52 SAST" duration-ms="158" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=successfulLogin status=SUCCESS method=LoginTests.successfulLogin()[pri:0, instance:com.owethupeyane.tests.LoginTests@7051777c] output={null}]]]>
+                <![CDATA[[TestResult name=successfulLogin status=SUCCESS method=LoginTests.successfulLogin()[pri:0, instance:com.owethupeyane.tests.LoginTests@16a49a5d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -47,100 +47,114 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.owethupeyane.tests.LoginTests -->
       <class name="com.owethupeyane.tests.InventoryTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:16 SAST" name="setUp" finished-at="2025-06-11T14:19:22 SAST" duration-ms="5632" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:16:28 SAST" name="setUp" finished-at="2025-06-12T13:16:34 SAST" duration-ms="6091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddToCart()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:22 SAST" name="testAddToCart" finished-at="2025-06-11T14:19:23 SAST" duration-ms="1280" status="PASS">
+        <test-method signature="testProductCount()[pri:1, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:16:34 SAST" name="testProductCount" finished-at="2025-06-12T13:16:35 SAST" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddToCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:23 SAST" name="tearDown" finished-at="2025-06-11T14:19:24 SAST" duration-ms="257" status="PASS">
+        </test-method> <!-- testProductCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:16:35 SAST" name="tearDown" finished-at="2025-06-12T13:16:35 SAST" duration-ms="291" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAddToCart status=SUCCESS method=InventoryTests.testAddToCart()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751] output={null}]]]>
+                <![CDATA[[TestResult name=testProductCount status=SUCCESS method=InventoryTests.testProductCount()[pri:1, instance:com.owethupeyane.tests.InventoryTests@50d951e7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:24 SAST" name="setUp" finished-at="2025-06-11T14:19:26 SAST" duration-ms="1968" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:16:35 SAST" name="setUp" finished-at="2025-06-12T13:16:48 SAST" duration-ms="12858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductCount()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:26 SAST" name="verifyProductCount" finished-at="2025-06-11T14:19:26 SAST" duration-ms="440" status="PASS">
+        <test-method signature="testAddFirstItemToCart()[pri:2, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:16:48 SAST" name="testAddFirstItemToCart" finished-at="2025-06-12T13:17:01 SAST" duration-ms="12920" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:26 SAST" name="tearDown" finished-at="2025-06-11T14:19:26 SAST" duration-ms="190" status="PASS">
+        </test-method> <!-- testAddFirstItemToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:01 SAST" name="tearDown" finished-at="2025-06-12T13:17:01 SAST" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751] output={null}]]]>
+                <![CDATA[[TestResult name=testAddFirstItemToCart status=SUCCESS method=InventoryTests.testAddFirstItemToCart()[pri:2, instance:com.owethupeyane.tests.InventoryTests@50d951e7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:26 SAST" name="setUp" finished-at="2025-06-11T14:19:44 SAST" duration-ms="17710" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:01 SAST" name="setUp" finished-at="2025-06-12T13:17:03 SAST" duration-ms="2167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:44 SAST" name="verifyProductCount" data-provider="users" finished-at="2025-06-11T14:19:45 SAST" duration-ms="831" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testAddItemByName()[pri:3, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:03 SAST" name="testAddItemByName" finished-at="2025-06-12T13:17:14 SAST" duration-ms="11121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:45 SAST" name="tearDown" finished-at="2025-06-11T14:19:46 SAST" duration-ms="309" status="PASS">
+        </test-method> <!-- testAddItemByName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:14 SAST" name="tearDown" finished-at="2025-06-12T13:17:14 SAST" duration-ms="238" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751] output={null}]]]>
+                <![CDATA[[TestResult name=testAddItemByName status=SUCCESS method=InventoryTests.testAddItemByName()[pri:3, instance:com.owethupeyane.tests.InventoryTests@50d951e7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:46 SAST" name="setUp" finished-at="2025-06-11T14:19:48 SAST" duration-ms="2569" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:14 SAST" name="setUp" finished-at="2025-06-12T13:17:16 SAST" duration-ms="1346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:48 SAST" name="verifyProductCount" data-provider="users" finished-at="2025-06-11T14:19:54 SAST" duration-ms="5474" status="PASS">
+        <test-method signature="testAddMultipleItems()[pri:4, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:16 SAST" name="testAddMultipleItems" finished-at="2025-06-12T13:17:29 SAST" duration-ms="13355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMultipleItems -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:29 SAST" name="tearDown" finished-at="2025-06-12T13:17:29 SAST" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
+                <![CDATA[[TestResult name=testAddMultipleItems status=SUCCESS method=InventoryTests.testAddMultipleItems()[pri:4, instance:com.owethupeyane.tests.InventoryTests@50d951e7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751]" started-at="2025-06-11T14:19:54 SAST" name="tearDown" finished-at="2025-06-11T14:19:54 SAST" duration-ms="196" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:30 SAST" name="setUp" finished-at="2025-06-12T13:17:32 SAST" duration-ms="2502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartBadgeUpdates()[pri:5, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:32 SAST" name="testCartBadgeUpdates" finished-at="2025-06-12T13:17:43 SAST" duration-ms="11263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartBadgeUpdates -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:43 SAST" name="tearDown" finished-at="2025-06-12T13:17:43 SAST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@56ccd751] output={null}]]]>
+                <![CDATA[[TestResult name=testCartBadgeUpdates status=SUCCESS method=InventoryTests.testCartBadgeUpdates()[pri:5, instance:com.owethupeyane.tests.InventoryTests@50d951e7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:43 SAST" name="setUp" finished-at="2025-06-12T13:17:45 SAST" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartNavigation()[pri:6, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:45 SAST" name="testCartNavigation" finished-at="2025-06-12T13:17:46 SAST" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@50d951e7]" started-at="2025-06-12T13:17:46 SAST" name="tearDown" finished-at="2025-06-12T13:17:46 SAST" duration-ms="168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCartNavigation status=SUCCESS method=InventoryTests.testCartNavigation()[pri:6, instance:com.owethupeyane.tests.InventoryTests@50d951e7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -149,102 +163,116 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.owethupeyane.tests.InventoryTests -->
     </test> <!-- Login Tests -->
-    <test started-at="2025-06-11T14:20:15 SAST" name="Inventory Tests" finished-at="2025-06-11T14:20:57 SAST" duration-ms="42267">
+    <test started-at="2025-06-12T13:17:52 SAST" name="Inventory Tests" finished-at="2025-06-12T13:18:52 SAST" duration-ms="60377">
       <class name="com.owethupeyane.tests.InventoryTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:15 SAST" name="setUp" finished-at="2025-06-11T14:20:17 SAST" duration-ms="2478" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:17:52 SAST" name="setUp" finished-at="2025-06-12T13:17:54 SAST" duration-ms="1951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddToCart()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:17 SAST" name="testAddToCart" finished-at="2025-06-11T14:20:18 SAST" duration-ms="525" status="PASS">
+        <test-method signature="testProductCount()[pri:1, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:17:54 SAST" name="testProductCount" finished-at="2025-06-12T13:17:54 SAST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddToCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:18 SAST" name="tearDown" finished-at="2025-06-11T14:20:18 SAST" duration-ms="172" status="PASS">
+        </test-method> <!-- testProductCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:17:54 SAST" name="tearDown" finished-at="2025-06-12T13:17:54 SAST" duration-ms="165" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAddToCart status=SUCCESS method=InventoryTests.testAddToCart()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228] output={null}]]]>
+                <![CDATA[[TestResult name=testProductCount status=SUCCESS method=InventoryTests.testProductCount()[pri:1, instance:com.owethupeyane.tests.InventoryTests@54657dd2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:18 SAST" name="setUp" finished-at="2025-06-11T14:20:21 SAST" duration-ms="2631" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:17:54 SAST" name="setUp" finished-at="2025-06-12T13:17:56 SAST" duration-ms="1555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductCount()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:21 SAST" name="verifyProductCount" finished-at="2025-06-11T14:20:22 SAST" duration-ms="477" status="PASS">
+        <test-method signature="testAddFirstItemToCart()[pri:2, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:17:56 SAST" name="testAddFirstItemToCart" finished-at="2025-06-12T13:18:07 SAST" duration-ms="11044" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:22 SAST" name="tearDown" finished-at="2025-06-11T14:20:22 SAST" duration-ms="538" status="PASS">
+        </test-method> <!-- testAddFirstItemToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:07 SAST" name="tearDown" finished-at="2025-06-12T13:18:07 SAST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228] output={null}]]]>
+                <![CDATA[[TestResult name=testAddFirstItemToCart status=SUCCESS method=InventoryTests.testAddFirstItemToCart()[pri:2, instance:com.owethupeyane.tests.InventoryTests@54657dd2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:22 SAST" name="setUp" finished-at="2025-06-11T14:20:36 SAST" duration-ms="14207" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:07 SAST" name="setUp" finished-at="2025-06-12T13:18:10 SAST" duration-ms="2594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:37 SAST" name="verifyProductCount" data-provider="users" finished-at="2025-06-11T14:20:37 SAST" duration-ms="299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testAddItemByName()[pri:3, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:10 SAST" name="testAddItemByName" finished-at="2025-06-12T13:18:21 SAST" duration-ms="11015" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:37 SAST" name="tearDown" finished-at="2025-06-11T14:20:39 SAST" duration-ms="2204" status="PASS">
+        </test-method> <!-- testAddItemByName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:21 SAST" name="tearDown" finished-at="2025-06-12T13:18:21 SAST" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228] output={null}]]]>
+                <![CDATA[[TestResult name=testAddItemByName status=SUCCESS method=InventoryTests.testAddItemByName()[pri:3, instance:com.owethupeyane.tests.InventoryTests@54657dd2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:39 SAST" name="setUp" finished-at="2025-06-11T14:20:49 SAST" duration-ms="9164" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:21 SAST" name="setUp" finished-at="2025-06-12T13:18:23 SAST" duration-ms="2071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:49 SAST" name="verifyProductCount" data-provider="users" finished-at="2025-06-11T14:20:56 SAST" duration-ms="7289" status="PASS">
+        <test-method signature="testAddMultipleItems()[pri:4, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:23 SAST" name="testAddMultipleItems" finished-at="2025-06-12T13:18:36 SAST" duration-ms="12853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMultipleItems -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:36 SAST" name="tearDown" finished-at="2025-06-12T13:18:36 SAST" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
+                <![CDATA[[TestResult name=testAddMultipleItems status=SUCCESS method=InventoryTests.testAddMultipleItems()[pri:4, instance:com.owethupeyane.tests.InventoryTests@54657dd2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228]" started-at="2025-06-11T14:20:56 SAST" name="tearDown" finished-at="2025-06-11T14:20:57 SAST" duration-ms="1186" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:36 SAST" name="setUp" finished-at="2025-06-12T13:18:38 SAST" duration-ms="2003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartBadgeUpdates()[pri:5, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:38 SAST" name="testCartBadgeUpdates" finished-at="2025-06-12T13:18:49 SAST" duration-ms="11237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartBadgeUpdates -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:49 SAST" name="tearDown" finished-at="2025-06-12T13:18:49 SAST" duration-ms="196" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductCount status=SUCCESS method=InventoryTests.verifyProductCount(java.lang.String,java.lang.String)[pri:0, instance:com.owethupeyane.tests.InventoryTests@65cc8228] output={null}]]]>
+                <![CDATA[[TestResult name=testCartBadgeUpdates status=SUCCESS method=InventoryTests.testCartBadgeUpdates()[pri:5, instance:com.owethupeyane.tests.InventoryTests@54657dd2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:49 SAST" name="setUp" finished-at="2025-06-12T13:18:51 SAST" duration-ms="1953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartNavigation()[pri:6, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:51 SAST" name="testCartNavigation" finished-at="2025-06-12T13:18:52 SAST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.owethupeyane.tests.InventoryTests@54657dd2]" started-at="2025-06-12T13:18:52 SAST" name="tearDown" finished-at="2025-06-12T13:18:52 SAST" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCartNavigation status=SUCCESS method=InventoryTests.testCartNavigation()[pri:6, instance:com.owethupeyane.tests.InventoryTests@54657dd2] output={null}]]]>
               </value>
             </param>
           </params>

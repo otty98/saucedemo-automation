@@ -16,11 +16,13 @@
     <testng.version>7.8.0</testng.version>
     <webdrivermanager.version>5.6.3</webdrivermanager.version>
     <allure.version>2.24.0</allure.version>
-    <aspectj.version>1.9.22</aspectj.version>
+    <allure.maven.version>2.13.0</allure.maven.version>
+    <aspectj.version>1.9.20.1</aspectj.version>
+    <maven.surefire.version>3.2.5</maven.surefire.version>
   </properties>
 
   <dependencies>
-    <!-- Test Framework -->
+    <!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -35,34 +37,32 @@
       <version>${selenium.version}</version>
     </dependency>
 
-    <!-- WebDriver Manager -->
+    <!-- WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager.version}</version>
     </dependency>
 
+    <!-- Allure Commons (for annotations and runtime support) -->
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-testng</artifactId>
       <version>${allure.version}</version>
+    </dependency>
+
+    <!-- SLF4J -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
 
   <build>
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-      </resource>
-    </resources>
-    <testResources>
-      <testResource>
-        <directory>src/test/resources</directory>
-      </testResource>
-    </testResources>
-
     <plugins>
+      <!-- Java Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -72,23 +72,25 @@
         </configuration>
       </plugin>
 
+      <!-- Surefire Plugin (Test Runner) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>${maven.surefire.version}</version>
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
           <argLine>
             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+            --add-opens java.base/java.lang=ALL-UNNAMED
           </argLine>
-          <properties>
+          <systemProperties>
             <property>
-              <name>listener</name>
-              <value>io.qameta.allure.testng.AllureTestNg</value>
+              <name>allure.results.directory</name>
+              <value>${project.build.directory}/allure-results</value>
             </property>
-          </properties>
+          </systemProperties>
         </configuration>
         <dependencies>
           <dependency>
@@ -99,13 +101,15 @@
         </dependencies>
       </plugin>
 
-      <!-- Allure Maven Plugin -->
+      <!-- Allure Report Plugin -->
       <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
         <version>2.12.0</version>
         <configuration>
-          <reportVersion>2.24.0</reportVersion>
+          <reportVersion>${allure.version}</reportVersion>
+          <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+          <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
         </configuration>
       </plugin>
     </plugins>
