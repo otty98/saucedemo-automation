@@ -6,12 +6,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
+import java.util.HashMap;
 
 /**
  * This class serves as a base class for all test classes.
@@ -30,21 +32,25 @@ public class TestBase {
      */
     @BeforeMethod
     public void setUp() {
-        // Automatically manages the correct ChromeDriver version
         WebDriverManager.chromedriver().setup();
 
-        // Launches a new Chrome browser instance
-        driver = new ChromeDriver();
+        // Disable Chrome password manager popups and automation warnings
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-blink-features=AutomationControlled");
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        options.setExperimentalOption("useAutomationExtension", false);
+        options.setExperimentalOption("prefs", new HashMap<String, Object>() {{
+            put("credentials_enable_service", false);
+            put("profile.password_manager_enabled", false);
+        }});
 
-        // Maximizes the browser window
-        driver.manage().window().maximize();
+        // Launch Chrome with the custom options
+        driver = new ChromeDriver(options);
 
-        // Sets implicit wait for finding elements
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
-        // Opens the target website before each test
         driver.get("https://www.saucedemo.com");
     }
+
 
     /**
      * This method runs after each test method.

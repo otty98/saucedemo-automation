@@ -1,8 +1,6 @@
 package com.owethupeyane.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -36,17 +34,32 @@ public class InventoryPage {
      * Add the first item to cart
      */
     public void addFirstItemToCart() {
-        wait.until(ExpectedConditions.elementToBeClickable(addToCartButtons));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(addToCartButtons));
         List<WebElement> buttons = driver.findElements(addToCartButtons);
+
         if (!buttons.isEmpty()) {
-            buttons.get(0).click();
-            // Wait for the button text to change or cart badge to appear
+            WebElement firstButton = buttons.get(0);
+
+            // Scroll into view
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstButton);
+
+            try {
+                // Wait until clickable
+                wait.until(ExpectedConditions.elementToBeClickable(firstButton));
+                firstButton.click();
+            } catch (ElementClickInterceptedException e) {
+                // Fallback to JS click
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", firstButton);
+            }
+
+            // Wait for UI feedback
             wait.until(ExpectedConditions.or(
                     ExpectedConditions.presenceOfElementLocated(cartBadge),
                     ExpectedConditions.presenceOfElementLocated(removeFromCartButtons)
             ));
         }
     }
+
 
     /**
      * Add item to cart by product name (used in your tests)
